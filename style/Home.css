@@ -1,0 +1,259 @@
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-section {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* pseudo code for home page */
+.hero-section::before {
+    content: " ";
+    background: url("../images/home_page_cover.jpg") no-repeat center center / cover;
+    height: 80vh;
+    width: 100vw;
+    position: absolute;
+    top: 1;
+    z-index: -1;
+    filter: brightness(.4);
+}
+
+
+
+/* input form style */
+.flex-col div input {
+    text-transform: capitalize;
+}
+
+.flex-col div input[type="text"] {
+    padding: .7rem;
+}
+
+.flex-col div input[type="date"] {
+    padding: .65rem;
+}
+
+.flex-col div input,
+.flex-col div button {
+    outline: none;
+    margin: 0 .5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.flex-col div button {
+    background: #309AA8;
+    border: none;
+    padding: .7rem 2rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flex-col div input[type="text"],
+.flex-col div input[type="date"] {
+    border: .5px solid #ccc;
+    border-radius: 4px;
+}
+
+/* why to choose section */
+
+.parent-section {
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.parent-section-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 0 10rem;
+}
+
+
+
+/* footer section */
+.footer-section {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* pseudo code for home page */
+.footer-section::before {
+    content: " ";
+    background: rgb(1, 1, 78);
+    height: 80vh;
+    width: 100vw;
+    position: absolute;
+    top: 1;
+    z-index: -1;
+    filter: brightness(.4);
+
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .hero-section::before {
+        height: 65vh;
+    }
+
+    .hero-section {
+        height: 65vh;
+    }
+
+    .sologon-conatiner {
+        display: none;
+    }
+
+    .location-search-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        width: 90%;
+    }
+
+    .form-div div input[type="text"],
+    .form-div div input[type="date"],
+    .form-div div button {
+        width: 90%;
+    }
+
+    /* why us? section */
+    .parent-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: fit-content;
+        padding: 0 0;
+
+    }
+
+    .why-us-information {
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 4px;
+        box-shadow: 5px 5px #e0e0e0;
+        gap: 1rem;
+    }
+
+
+    .margin-right-left-1rem{
+        align-items: center;
+    }
+
+    .width-20 {
+        width: 70vw;
+    }
+
+    .responsive-text-center{
+        text-align: justify;
+    }
+
+    .width-18{
+        width: 70vw;
+    } 
+
+    .section-heading{
+        margin: 0 1rem;
+    }
+
+    .section-heading-padding{
+        margin: 0;
+    }
+}
+
+.why-us-information{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px #e7e7e7;
+}
+
+@media (min-width: 780px) and (max-width: 1500px){
+    .why-us-information{
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 8px 8px 8px #e7e7e7;
+    }
+
+    .parent-section-wrapper{
+        padding: 0 2rem;
+        gap: 2rem;
+
+    }
+
+    .margin-1rem {
+        margin: 0;
+    }
+
+    .width-20 {
+        width: 35vw;
+    }  
+} 
+
+.space-y-4{
+    display: grid;
+    gap: 6px;
+}
